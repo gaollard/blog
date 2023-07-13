@@ -1,0 +1,66 @@
+[
+  {
+    "path": "/Users/xiong.gao/Desktop/static-route/docs/babel",
+    "route": "/babel",
+    "leaf": false,
+    "title": "babel",
+    "depth": 0,
+    "children": [
+      {
+        "path": "/Users/xiong.gao/Desktop/static-route/docs/babel/index.md",
+        "route": "/babel/index.md",
+        "leaf": true,
+        "title": "index",
+        "depth": 1
+      }
+    ]
+  },
+  {
+    "path": "/Users/xiong.gao/Desktop/static-route/docs/index.md",
+    "route": "/index.md",
+    "leaf": true,
+    "title": "index",
+    "depth": 0
+  },
+  {
+    "path": "/Users/xiong.gao/Desktop/static-route/docs/webpack",
+    "route": "/webpack",
+    "leaf": false,
+    "title": "webpack",
+    "depth": 0,
+    "children": [
+      {
+        "path": "/Users/xiong.gao/Desktop/static-route/docs/webpack/基础部分",
+        "route": "/webpack/基础部分",
+        "leaf": false,
+        "title": "基础部分",
+        "depth": 1,
+        "children": [
+          {
+            "path": "/Users/xiong.gao/Desktop/static-route/docs/webpack/基础部分/index.md",
+            "route": "/webpack/基础部分/index.md",
+            "leaf": true,
+            "title": "index",
+            "depth": 2
+          }
+        ]
+      },
+      {
+        "path": "/Users/xiong.gao/Desktop/static-route/docs/webpack/进阶部分",
+        "route": "/webpack/进阶部分",
+        "leaf": false,
+        "title": "进阶部分",
+        "depth": 1,
+        "children": [
+          {
+            "path": "/Users/xiong.gao/Desktop/static-route/docs/webpack/进阶部分/index.md",
+            "route": "/webpack/进阶部分/index.md",
+            "leaf": true,
+            "title": "index",
+            "depth": 2
+          }
+        ]
+      }
+    ]
+  }
+]

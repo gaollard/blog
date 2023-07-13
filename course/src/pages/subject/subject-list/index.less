@@ -1,0 +1,35 @@
+.page-subject-list {
+  .content {
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0;
+    }
+    .item {
+      box-sizing: border-box;
+      width: calc((100% - 36px)/4);
+      height: 120px;
+      background: linear-gradient(to bottom right, rgb(213, 213, 235), rgb(225, 216, 245));;
+      font-size: 24px;
+      text-align: center;
+      line-height: 120px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      color: #333;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 12px;
+      box-shadow: 2px 2px 5px #ddd;
+      &:hover {
+        color: blueviolet;
+        color: #fff;
+        border: 1px solid blue;
+        background: #7588f3;
+      }
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "ignore": [".git", "node_modules", "dist"],
+    "watch": ["./src", "index.html", "./views", "./data"], 
+    "exec": "npm run dev",
+    "ext": "js,json,ts,ejs,css"
+  }

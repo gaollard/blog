@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>woody</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <link rel="stylesheet" href="/main.css">
+</head>
+
+<% function renderMenuList(list, depth) { %>
+  <ul class="<%= " depth-" + depth %>">
+    <% for(var node of list) { %>
+      <li class="menu-item">
+        <div class="menu-item-title">
+          <% if (node.children) { %>
+            <div class="menu-link" data-link="<%= node.route %>">
+              <%= node.title %>
+            </div>
+            <img class="menu-arrow" src="/arrow.svg" alt="">
+            <% } else { %>
+              <a class="<%= 'menu-link menu-link-depth-' + depth%>"
+                href="<%= '/subject' + node.route.replace('.md', '') %>">
+                <%= node.title %>
+              </a>
+              <% } %>
+        </div>
+        <% if(node.children && node.children.length) { %>
+          <div class="children">
+            <%= renderMenuList(node.children, depth + 1) %>
+          </div>
+          <% } %>
+      </li>
+      <% } %>
+  </ul>
+  <% } %>
+
+    <body>
+      <div class="root">
+      <%- include("./partial/head"); %>
+      <main>
+        <div class="g-main">
+          <div class="article-left">
+            <div class="g-side">
+              <div class="g-menu">
+                <%= renderMenuList(menu, 0) %>
+              </div>
+            </div>
+          </div>
+          <div id="article-content"><%- content %></div>
+          <div class="article-right">
+            <div id="article-toc" class="article-toc"></div>
+          </div>
+        </div>
+      </main>
+      <script src="/jquery.js"></script>
+      <script src="/main.js"></script>
+    </body>
+</html>

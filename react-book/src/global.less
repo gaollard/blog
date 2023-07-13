@@ -1,0 +1,145 @@
+@import './ui.less';
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #fff;
+  font-size: 16px;
+}
+
+#root {
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.g-w {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  .container {
+    overflow: auto;
+    flex: 1;
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    flex-shrink: 0;
+    height: 64px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    .nav-list {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 1400px;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .nav-item {
+      font-size: 16px;
+      margin-left: 20px;
+      padding-left: 12px;
+      cursor: pointer;
+      color: #666;
+      &.active {
+        color: #333;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .menu-item {
+    cursor: pointer;
+  }
+
+  .menu-title {
+    padding: 0 10px;
+    border-radius: 8px;
+    line-height: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .menu-title:hover {
+    background-color: #f5f5f5;
+  }
+
+  .menu-title.active {
+    color: rgb(0, 76, 163);
+    background-color: rgb(224, 239, 255);
+  }
+
+  .g-side {
+    position: fixed;
+    top: 60px;
+    overflow: auto;
+    height: 100%;
+    flex-shrink: 0;
+    width: 256px;
+    padding-top: 20px;
+    padding-right: 12px;
+    margin-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #eee;
+  }
+}
+
+.title {
+  background: rgb(121, 242, 157);
+}
+
+.article {
+  width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 16px;
+  color: rgb(51, 65, 85);
+  line-height: 2;
+  h2,
+  h3,
+  h1 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  img {
+    // box-shadow: 1px 1px 20px #444;
+    // border: 1px solid #eee;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .shiki {
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 12px;
+    line-height: 1.5;
+    background-color: rgba(0, 93, 199, 0.05) !important;
+  }
+}
