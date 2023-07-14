@@ -7,8 +7,7 @@ function Header() {
         <div>
           <Link className="link" to="/">专题</Link>
           <Link className="link" to="/article">文章</Link>
-          <Link className="link" to="/discuss">广场</Link>
-          <Link className="link" to={"/link"}>友链</Link>
+          <Link className="link" to={"/post/link"}>友链</Link>
           <Link className="link" to={"/post/author"}>作者</Link>
         </div>
         <div></div>

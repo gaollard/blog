@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.less';
 import Header from '../../../components/header';
 import { Link } from 'react-router-dom';
-import subjectJson from '../../../subject.json'
+import subjectJson from '../../../data/subject.json';
 
 const subjects = [
   { title: 'NodeJS', id: 'NodeJS' },
@@ -45,11 +45,8 @@ function SubjectList() {
 
   return (
     <div className="page-subject-list">
-      <Header />
-      <div className="main g-w">
-        <div className="content">
-          <div className="list">{subjectJson.map(renderItem)}</div>
-        </div>
+      <div className="content">
+        <div className="list">{subjectJson.map(renderItem)}</div>
       </div>
     </div>
   );

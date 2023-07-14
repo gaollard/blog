@@ -74,10 +74,11 @@ a {
 #root,
 .App {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .g-w {
-  width: 1480px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -128,7 +129,7 @@ a {
 .main {
   display: flex;
   margin: 0 auto;
-  margin-top: 64px;
+  margin-top: calc(64px + 20px);
   min-height: calc(100vh - 64px - 40px);
 }
 
@@ -144,12 +145,12 @@ a {
   background: #fff;
   border: 1px solid #e3e8f7;
   animation: slide-in 0.6s 0.1s backwards;
+  box-sizing: border-box;
 }
 
 .content {
   min-height: 100%;
   flex: 1;
-  padding: 1rem 2rem;
   border-radius: 12px;
   animation: slide-in 0.6s 0.1s backwards;
 }

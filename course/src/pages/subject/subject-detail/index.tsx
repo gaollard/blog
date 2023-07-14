@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from '../../../components/header';
 import SubjectMenu from './subject-menu';
 import './index.less';
+import { Spin } from 'antd';
 
 const markdown = require('markdown-it');
 const toc = require('markdown-it-toc-done-right').default;
@@ -10,6 +11,7 @@ const frontmatter = require('markdown-it-front-matter');
 
 export default function SubjectDetail() {
   const [detail, setDetail] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const renderContent = (content: string) => {
     // const md = markdown({
@@ -31,7 +33,7 @@ export default function SubjectDetail() {
     // .use(toc);
 
     // setContent(html);
-    (window as any).shiki
+    return (window as any).shiki
       .getHighlighter({
         theme: 'github-light',
         // theme: 'nord'
@@ -56,25 +58,29 @@ export default function SubjectDetail() {
 
   const clickNode = (content: string) => {
     console.log(content);
-    renderContent(content);
+    setLoading(true);
+    renderContent(content).then(() => {
+      setLoading(false);
+    });
   };
 
   return (
     <div className="page-subject-detail">
-      <Header />
-      <div className="main g-w">
-        <div className="content">
-          <div className='left'>
-            <SubjectMenu clickNode={clickNode} />
-          </div>
-          <div
-            className="article"
-            dangerouslySetInnerHTML={{ __html: detail }}
-          ></div>
-          <div className='right'>
-
-          </div>
+      <div className="content">
+        <div className="left">
+          <SubjectMenu clickNode={clickNode} />
         </div>
+
+        <div className="article">
+          {loading ? (
+            <div className="loading">
+              <Spin size="large" />
+            </div>
+          ) : (
+            <div dangerouslySetInnerHTML={{ __html: detail }}></div>
+          )}
+        </div>
+        <div className="right"></div>
       </div>
     </div>
   );

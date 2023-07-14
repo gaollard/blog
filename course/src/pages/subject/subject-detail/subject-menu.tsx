@@ -1,9 +1,9 @@
-import { Button, Tree } from 'antd';
+import { Button } from 'antd';
 import type { DataNode, TreeProps } from 'antd/es/tree';
 import React, { useState, useEffect } from 'react';
-import subjectData from '../../../subject.json'
+import subjectData from '../../../data/subject.json'
 import { EditOutlined } from '@ant-design/icons';
-import { Link, useMatch, useParams, useRoutes } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import DirectoryTree from 'antd/es/tree/DirectoryTree';
 
 type MyNode = DataNode & {
@@ -13,17 +13,20 @@ type MyNode = DataNode & {
 const findNode = (id: string | number, gData = [] as DataNode[]) => {
   let res: DataNode | null = null;
   let gPath = [] as (string|number)[];
+
   const traverse = (list: DataNode[], path = [] as (string|number)[]) => {
     for (let i = 0; i < list.length; i++) {
-      if (list[i].key === id) {
+      const _key = list[i].key
+      if (_key === id) {
         res = list[i];
         gPath = path;
         break;
       } else {
-        traverse(list[i].children || [], [...path, list[i].key]);
+        traverse(list[i].children || [], [...path, _key]);
       }
     }
   };
+
   traverse(gData, [] as (string|number)[]);
   return {
     node: res,
@@ -38,8 +41,9 @@ const SubjectMenu: React.FC<{
 }) => {
   const routeParams = useParams();
   const subjectName = routeParams['*']?.split('/')[0];
+
   const list = subjectData.find((it) => it.title === subjectName)?.children || [];
-  const initNode = findNode(routeParams['*'] as string, list);
+  const initNode = findNode('/' + routeParams['*'] as string, list);
 
   const [gData, setGData] = useState<MyNode[]>(list);
   const [expandedKeys] = useState(initNode.path);
@@ -82,7 +86,7 @@ const SubjectMenu: React.FC<{
   };
 
   const onDrop: TreeProps['onDrop'] = (info) => {
-    console.log(info);
+    // console.log(info);
     const dropKey = info.node.key;
     const dragKey = info.dragNode.key;
     const dropPos = info.node.pos.split('-');
@@ -115,7 +119,6 @@ const SubjectMenu: React.FC<{
       arr.splice(index, 1);
       dragObj = item;
     });
-    console.log(info.dropToGap);
 
     if (!info.dropToGap) {
       // Drop on the content
@@ -149,7 +152,6 @@ const SubjectMenu: React.FC<{
         ar.splice(i! + 1, 0, dragObj!);
       }
     }
-    console.log(data);
     setGData(data);
   };
 

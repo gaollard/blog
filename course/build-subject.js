@@ -54,6 +54,6 @@ function read(sPath, parent, depth) {
 
 read(rootPath, rootNode, 0);
 
-fs.writeFileSync("src/subject.json", JSON.stringify(rootNode.children));
+fs.writeFileSync("src/data/subject.json", JSON.stringify(rootNode.children));
 
 console.dir(rootNode, { depth: 6 });
