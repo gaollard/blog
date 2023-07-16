@@ -47,7 +47,7 @@ export default function SubjectDetail() {
             return highlighter.codeToHtml(code, { lang });
           },
         }).use(frontmatter, (fm: any) => {
-          console.log(fm); // fm 是一个对象，包含 YAML 头部数据
+          console.log(222, fm); // fm 是一个对象，包含 YAML 头部数据
         });
         const html = md.render(content);
         // var html = md.render("# markdown-it rulezz!\n\n${toc}\n## with markdown-it-toc-done-right rulezz even more!");
@@ -64,6 +64,12 @@ export default function SubjectDetail() {
     });
   };
 
+  useEffect(() => {
+    if (detail) {
+      (window as any).initToc()
+    }
+  }, [detail])
+
   return (
     <div className="page-subject-detail">
       <div className="content">
@@ -71,7 +77,7 @@ export default function SubjectDetail() {
           <SubjectMenu clickNode={clickNode} />
         </div>
 
-        <div className="article">
+        <div className="article" id='article-content'>
           {loading ? (
             <div className="loading">
               <Spin size="large" />
@@ -80,7 +86,9 @@ export default function SubjectDetail() {
             <div dangerouslySetInnerHTML={{ __html: detail }}></div>
           )}
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div id='article-toc'></div>
+        </div>
       </div>
     </div>
   );
