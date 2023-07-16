@@ -3,6 +3,7 @@ import './index.less';
 import Header from '../../../components/header';
 import { Link } from 'react-router-dom';
 import subjectJson from '../../../data/subject.json';
+import { AppstoreOutlined, UnorderedListOutlined } from '@ant-design/icons';
 
 const subjects = [
   { title: 'NodeJS', id: 'NodeJS' },
@@ -26,6 +27,7 @@ const subjects = [
 
 function SubjectList() {
   const [tag, setTag] = useState('NodeJS');
+  const [mode, setMode] = useState<'outline' | 'items'>('outline');
 
   const renderItem = (it: (typeof subjectJson)[0]) => {
     const cls = it.title === tag ? 'item is-active' : 'item';
@@ -46,7 +48,14 @@ function SubjectList() {
   return (
     <div className="page-subject-list">
       <div className="content">
-        <div className="list">{subjectJson.map(renderItem)}</div>
+        <div style={{ display: 'flex' }}>
+          { mode === 'items' ? (
+          <AppstoreOutlined onClick={() => setMode('outline')} style={{ cursor: 'pointer' }} />
+          ) : (
+            <UnorderedListOutlined onClick={() => setMode('items')} style={{ cursor: 'pointer' }} />
+          )}
+        </div>
+        <div className={`list list-${mode}`}>{subjectJson.map(renderItem)}</div>
       </div>
     </div>
   );

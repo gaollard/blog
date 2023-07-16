@@ -1,8 +1,0 @@
-{
-  "index": "前言介绍",
-  "01-basic": "夯实基础",
-  "02-mvc": "实现 MVC 框架",
-  "03-express": "ExpressJS",
-  "04-koa": "KoaJS",
-  "05-prisma": "Prisma"
-}
