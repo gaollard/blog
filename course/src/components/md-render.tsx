@@ -35,11 +35,18 @@ export default function MdRender({ content }: { content: string }) {
   };
 
   useEffect(() => {
-    console.log(content)
     if (content) {
       renderContent(content);
+    } else {
+      renderContent('')
     }
   }, [content]);
+
+  useEffect(() => {
+    if (detail) {
+      (window as any).initToc()
+    }
+  }, [detail])
 
   return loading ? (
     <div className="loading">

@@ -10,12 +10,6 @@ export default function SubjectDetail() {
     setDetail(content);
   };
 
-  useEffect(() => {
-    if (detail) {
-      (window as any).initToc()
-    }
-  }, [detail])
-
   return (
     <div className="page-subject-detail">
       <div className="content">
