@@ -1,5 +1,5 @@
 ---
-title: 06 @babel/traverse
+title: 06 @babel traverse
 tags: Babel
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 05 @babel/runtime
+title: 05 @babel runtime
 tags: Babel
 ---
 

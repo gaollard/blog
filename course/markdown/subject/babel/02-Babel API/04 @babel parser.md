@@ -1,5 +1,5 @@
 ---
-title: 04 @babel/parser
+title: 04 @babel parser
 tags: Babel
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 01 @babel/core
+title: 01 @babel core
 tags: Babel
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 07 @babel/types
+title: 07 @babel types
 ---
 
 ## Identify 标识符

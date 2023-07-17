@@ -1,5 +1,5 @@
 ---
-title: 03 @babel/helpers
+title: 03 @babel helpers
 tags: Babel
 ---
 

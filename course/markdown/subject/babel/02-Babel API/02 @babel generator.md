@@ -1,5 +1,5 @@
 ---
-title: 02 @babel/generator
+title: 02 @babel generator
 tags: Babel
 ---
 
