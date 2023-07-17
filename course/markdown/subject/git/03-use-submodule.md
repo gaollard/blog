@@ -3,9 +3,7 @@ title: 03 Git 使用 submodule
 tags: Git
 ---
 
-## submodule 的使用
-
-- 参考文档 [https://git-scm.com/book/zh/v2/Git-工具-子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)
+> 参考文档 [https://git-scm.com/book/zh/v2/Git-工具-子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)
 
 ```bash
 usage: git submodule [--quiet] [--cached]
@@ -80,3 +78,6 @@ git submodule update --init
 
 ### 9、submodule 冲突怎么办
 submodule 冲突时，应先合并 submodule, 再来合并主仓库
+
+### 10、查询 submodule 状态
+![20230717185232](http://s3.airtlab.com/blog/20230717185232.png)
