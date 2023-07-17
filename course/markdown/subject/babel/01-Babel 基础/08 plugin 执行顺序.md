@@ -1,5 +1,5 @@
 ---
-title: 08 plugin 的顺序
+title: 08 plugin 执行顺序
 tags: Babel
 ---
 
