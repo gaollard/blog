@@ -9,7 +9,7 @@ tags: Babel
 yarn add --dev @babel/core @babel/cli @babel/preset-env
 ```
 
-- @babel/core 提供了基本功能，包括 AST 解析 以及 AST visit
+- @babel/core 提供了基本功能，包括 AST 解析 以及 AST visitor
 - @babel/cli 是一个命令行工具
 - @babel/preset-env 是一个插件集合
 
@@ -48,4 +48,4 @@ module.exports = { presets };
   - `.babelrc` 文件，没有扩展名。
   - `package.json` 文件，"babel" key
 
-https://babeljs.io/docs/config-files 在这里了解他们的区别，我们应该用哪种？
+[babeljs.io config](https://babeljs.io/docs/config-files) 在这里了解他们的区别，我们应该用哪种？

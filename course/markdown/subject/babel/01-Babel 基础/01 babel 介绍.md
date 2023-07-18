@@ -9,7 +9,7 @@ Babel 是一个开源的 JavaScript 编译器工具，用于将新版本的 Java
 
 ## 2、Babel 版本
 
-### v6 VS v7
+### 2.1 v6 VS v7
 Babel V7 相对于 Babel V6来说，有以下几个主要的区别：
 
 1. 命令行工具改进：V7 增加了一些新的命令行工具，如 `babel-upgrade` 和 `babel-merge` 等，这些工具让你更方便地维护Babel配置和升级到新的版本。
@@ -22,25 +22,25 @@ Babel V7 相对于 Babel V6来说，有以下几个主要的区别：
 
 Babel V7 相对于 Babel V6 的改进主要在于命令行工具、插件集合、配置文件和匹配更多的 ECMAScript 特性等方面。
 
-### V7.4.0
+### 2.2 V7.4.0
 - @babel/polyfill 被弃用，取而代之的是 `"core-js/stable"`
 
-### v7.6.0
+### 2.3 v7.6.0
 - 支持 TypeScript 命名空间的编译。
 
 ## 3、学习资料
 
-### 官方文档
+### 3.1 官方文档
 
 - babel 官方网 [https://babeljs.io/docs/en](https://babeljs.io/docs/en/)
 - babel 中文网 [https://www.babeljs.cn/docs](https://www.babeljs.cn/docs/)
 
-### 调试工具
+### 3.2 调试工具
 
 - AST 在线 <https://astexplorer.net/#/2uBU1BLuJ1>
 - babel 插件开发手册 <https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md>
 
-### 实践经验
+### 3.3 实践经验
 - babel 腾讯云社区文档 <https://cloud.tencent.com/developer/doc/1260> 介绍babel API
 - 最简单 compiler 教程 [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler/blob/master/the-super-tiny-compiler.js)
 - [高级前端基础-JavaScript抽象语法树AST](https://segmentfault.com/a/1190000018532745) <https://segmentfault.com/a/1190000018532745>
