@@ -1,9 +1,6 @@
 ---
 title: 04 Path 路径
-url: https://www.yuque.com/gaollard/ubc1q5/yhzw27
 ---
-
-<a name="jNaIt"></a>
 
 ### 1、Path 介绍
 

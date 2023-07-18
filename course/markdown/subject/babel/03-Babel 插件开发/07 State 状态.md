@@ -1,6 +1,5 @@
 ---
-title: 07 State（状态）
-url: https://www.yuque.com/gaollard/ubc1q5/prgac1
+title: 07 State 状态
 ---
 
 状态是抽象语法树AST转换的敌人，状态管理会不断牵扯你的精力，而且几乎所有你对状态的假设，总是会有一些未考虑到的语法最终证明你的假设是错误的。

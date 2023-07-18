@@ -1,6 +1,5 @@
 ---
 title: 05 Bindings（绑定）
-url: https://www.yuque.com/gaollard/ubc1q5/rw3qxv
 ---
 
 一个作用域可以创建变量，这种关系被称为绑定。
