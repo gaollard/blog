@@ -119,7 +119,7 @@ module.exports = { presets, plugins };
 
 在上面的代码中 test1Plugin 比 test2Plugin 先执行。
 
-### 4.2、jsx 和 ts 语法支持
+### 4.2 jsx 和 ts 语法支持
 
 显然第一个插件必须同时支持 jsx 语法 和 ts 语法，`@babel/preset-typescript` 已经支持了 jsx 语法
 
