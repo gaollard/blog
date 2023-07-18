@@ -1,7 +1,3 @@
----
-title: 06 修改函数参数
----
-
 ```js
 module.exports = function({ types: t }) {
   return {

@@ -1,8 +1,3 @@
----
-title: 07 生成 AST
-url: https://www.yuque.com/gaollard/ubc1q5/fzvnnp
----
-
 ```javascript
 const fs = require('fs');
 const babel = require("@babel/core");
