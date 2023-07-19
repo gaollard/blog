@@ -21,7 +21,7 @@ function initToc() {
         heading.setAttribute('id', id);
         const level = parseInt(heading.tagName.replace('H', ''), 10);
         html += `<li style="margin-left: ${
-          (level - 1) * 16
+          (level - 1) * 10
         }px"><a href="#${id}">${title}</a></li>`;
       });
 

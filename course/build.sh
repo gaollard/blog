@@ -1,6 +1,5 @@
-node build-subject.js
-node build-article.js
-npm run build
-git add .
-git commit -m "chore: build"
-git push
+for i in {1..100000}
+do
+    sleep 2
+    node build-subject.js
+done
