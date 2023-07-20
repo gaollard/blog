@@ -1,10 +1,3 @@
----
-title: 25 nodejs mvc 实现
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 ## 1、mvc 介绍
 
 MVC是一种软件设计架构，它将应用程序按照模型（Model）、视图（View）和控制器（Controller）的角色分成三个部分。

@@ -1,10 +1,3 @@
----
-title: 01 npm 用法笔记
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 ## 1、设置镜像地址
 
 用户级别 `npm` 配置文件一般在 `~/.npmrc`，可以手动打开并修改：

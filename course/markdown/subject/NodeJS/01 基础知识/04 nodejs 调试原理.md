@@ -1,10 +1,3 @@
----
-title: 04 nodejs 调试原理
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 > 原文 神光《JavaScript Debugger 原理揭秘》 https://zhuanlan.zhihu.com/p/372135871
 
 > 这篇文章首先对我是有帮助的，了解一些概念，但是作者在介绍 “解释型语言的 debugger” 原理时明显是有纰漏的，没有讲到解释器是如何支持中断的。比如我可以简单理解为死循环？这明显是错误的。其中可以参考雪碧大佬的回答：

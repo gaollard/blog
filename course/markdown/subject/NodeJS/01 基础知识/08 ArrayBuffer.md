@@ -1,10 +1,3 @@
----
-title: 08 Buffer 数组
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 目前笔者很少有使用到相关API，仅做了解。
 
 ## 1. 二进制数组的由来

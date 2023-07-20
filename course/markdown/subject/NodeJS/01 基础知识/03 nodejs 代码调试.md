@@ -1,10 +1,3 @@
----
-title: 03 nodejs 代码调试
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 目标：掌握程序的调试技巧
 
 ## 1、开启调试模式

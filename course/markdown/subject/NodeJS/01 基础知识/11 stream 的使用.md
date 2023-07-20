@@ -1,10 +1,3 @@
----
-title: 11 stream 的使用
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 ## 1、stream 介绍
 
 Stream 是一个抽象接口，Node 中有很多对象实现了这个接口。例如，对 http 服务器发起请求的 request 对象就是一个 Stream，还有 stdout（标准输出）。

@@ -1,10 +1,3 @@
----
-title: 07 buffer操作二进制数
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 > 部分内容参考 《针对 Node 的 Buffer 模块中难理解的 API 做一次彻底的讲解》https://www.bilibili.com/read/cv4881167?spm_id_from=333.999.0.0
 
 Buffer 对象用于表示固定长度的字节序列，许多 Node.js API 都支持 Buffer。

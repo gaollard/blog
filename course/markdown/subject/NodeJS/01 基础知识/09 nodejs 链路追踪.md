@@ -1,10 +1,3 @@
----
-title: 09 nodejs 链路追踪
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 ## 1、研究背景
 链路追踪是后台服务开发的一个很重要工具，它可以将所有的调用串联起来，形成一个有先后顺序的链路图。本文研究如何在 nodejs 中实现链路追踪。
 

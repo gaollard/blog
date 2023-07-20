@@ -1,10 +1,3 @@
----
-title: 14 设置 max-old-space-size
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 设置 V8 旧生代内存部分的最大内存大小。 随着内存消耗接近极限，V8 会花更多的时间在垃圾回收上，以释放未使用的内存。
 
 test.js

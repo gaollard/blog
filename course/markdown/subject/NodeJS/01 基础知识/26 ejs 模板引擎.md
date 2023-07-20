@@ -1,9 +1,3 @@
----
-title: 26 ejs 模板引擎
-tags: NodeJS 基础
-categories: NodeJS
----
-
 - 官方文档 https://ejs.co/#install
 
 ## 1、ejs 模板函数

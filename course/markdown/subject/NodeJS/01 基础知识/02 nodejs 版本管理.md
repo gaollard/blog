@@ -1,10 +1,3 @@
----
-title: 02 nodejs 版本管理
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 推荐在 windows 上使用 nvm，在 mac 上则使用 n。
 二者主要区别如下：
 - n 会将 nodejs 安装为全局版本，因此有可能在切换 node 版本后，发生全局模块执行出错的问题；

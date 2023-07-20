@@ -1,16 +1,9 @@
----
-title: 24 libuv
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 - https://musicfe.com/libuv/
 - https://zhuanlan.zhihu.com/p/50497450
 
 ## libuv 的核心
 
-libuv为什么可以这么高效呢？实际他使用了操作系统提供的高并发异步模型：
+libuv 为什么可以这么高效呢？实际他使用了操作系统提供的高并发异步模型：
 - linux: epoll
 - freebsd: kqueue
 - windows: iocp

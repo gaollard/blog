@@ -1,10 +1,3 @@
----
-title: 22 加密相关
-toc: true
-tags: NodeJS 基础
-categories: NodeJS
----
-
 ## aes 演示
 
 Node.js内置了加密模块，该模块提供了各种加密和解密算法，如AES（高级加密标准）和DES（数据加密标准）等。
