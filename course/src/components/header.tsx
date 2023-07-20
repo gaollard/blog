@@ -22,6 +22,10 @@ function Header() {
       title: '作者',
       path: '/post/author',
     },
+    {
+      title: '代办',
+      path: '/post/todo',
+    },
   ];
 
   useEffect(() => {
@@ -32,6 +36,8 @@ function Header() {
       index = 2;
     } else if (window.location.href.includes('article')) {
       index = 1;
+    } else if (window.location.href.includes('post/todo')) {
+      index = 4;
     }
     setIndex(index);
   }, [location]);

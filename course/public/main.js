@@ -29,7 +29,10 @@ function initToc() {
       toc.innerHTML = html;
 
       const navList = toc.querySelectorAll('li');
-      navList[0].className = 'active';
+
+      if (navList.length) {
+        navList[0].className = 'active';
+      }
 
       window.addEventListener('scroll', function () {
         var top = document.documentElement.scrollTop;
@@ -51,6 +54,8 @@ function initToc() {
 
     if (headings.length) {
       init();
+    } else {
+      toc.innerHTML = "";
     }
   }
 }

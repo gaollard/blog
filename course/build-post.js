@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const rootPath = path.resolve("/Users/xiong.gao/code/learn-books/blogs/course/markdown/subject");
+const rootPath = path.resolve("/Users/xiong.gao/code/learn-books/blogs/course/markdown/post");
 const rootNode = new Node(rootPath, rootPath, false);
 
 function Node(path, route, title, depth, content, leaf) {
@@ -54,4 +54,4 @@ function read(sPath, parent, depth) {
 
 read(rootPath, rootNode, 0);
 
-fs.writeFileSync("src/data/subject.json", JSON.stringify(rootNode.children));
+fs.writeFileSync("src/data/post.json", JSON.stringify(rootNode.children));
