@@ -30,4 +30,26 @@ JNI在一些特定场景下非常有用，例如当需要访问底层硬件设�
 
 加载本地库是操作系统相关的，因此需要确保编译的本地代码与目标操作系统兼容，并且本地库文件可以在目标系统上正确加载和运行。
 
-## 3、Java库路径
+## 3、Mapping types
+
+在JNI中，Mapping types（映射类型）是指Java数据类型和本地数据类型之间的对应关系。这些映射类型确保了Java代码能够与本地代码进行交互并正确处理数据。
+
+由于Java和本地语言使用不同的数据表示方法和内存布局，需要使用Mapping types来在Java和本地代码之间进行数据转换。这样可以确保数据在跨语言边界传递时的正确性和一致性。
+
+以下是常见的一些Mapping types示例：
+
+- `jboolean`：映射到本地`bool`类型
+- `jbyte`：映射到本地`signed char`类型
+- `jshort`：映射到本地`short`类型
+- `jint`：映射到本地`int`类型
+- `jlong`：映射到本地`long long`类型
+- `jfloat`：映射到本地`float`类型
+- `jdouble`：映射到本地`double`类型
+- `jchar`：映射到本地`unsigned short`类型
+- `jobject`：映射到Java对象类型
+
+这些Mapping types与JNI提供的函数和宏一起使用，使得可以在Java和本地代码之间进行数据的传递和处理。
+
+需要注意的是，在JNI中使用Mapping types时，应该遵循JNI规范和对应的类型约定，以确保数据的正确处理和转换。否则，可能会导致数据损坏、内存泄漏或其他问题。
+
+## 4、Java库路径
