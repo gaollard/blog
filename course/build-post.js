@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const rootPath = path.resolve("/Users/xiong.gao/code/learn-books/blogs/course/markdown/post");
+const rootPath = path.resolve("/Users/xiong.gao/code/learn-books/blog/course/markdown/post");
 const rootNode = new Node(rootPath, rootPath, false);
 
 function Node(path, route, title, depth, content, leaf) {
