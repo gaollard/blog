@@ -1,5 +1,3 @@
-## 1、配置
-
 - @istanbuljs/nyc-config-typescript
 - source-map-support
 
