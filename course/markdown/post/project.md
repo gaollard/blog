@@ -22,3 +22,13 @@ https://github.com/wiiai/react-native-template
 - 脚手架 https://github.com/wiiai/wiiai
 - 技术分析 https://github.com/wiiai/react-boot
 - 模板 https://github.com/wiiai/wiiai-h5-template
+
+## swagger json to axios
+
+根据 swagger json schema 生成 Frontend API Config 文件
+https://github.com/wiiai/swagger-doc-to-axios
+
+## vscode-plugin-data-to-interface
+
+data-to-interface 用于 data 到 interface 的转换，您可以对一些路径做自定义处理。
+https://github.com/wiiai/vscode-plugin-data-to-interface
