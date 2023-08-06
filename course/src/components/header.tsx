@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Input, Space } from 'antd';
+import { Space } from 'antd';
 import { SearchInput } from './search';
 
 function Header() {
@@ -16,6 +16,10 @@ function Header() {
       path: '/article',
     },
     {
+      title: '模板',
+      path: '/post/project',
+    },
+    {
       title: '友链',
       path: '/post/link',
     },
@@ -26,20 +30,29 @@ function Header() {
     {
       title: '代办',
       path: '/post/todo',
-    },
+    }
   ];
 
   useEffect(() => {
     let index = 0;
-    if (window.location.href.includes('post/author')) {
-      index = 3;
-    } else if (window.location.href.includes('post/link')) {
-      index = 2;
-    } else if (window.location.href.includes('article')) {
-      index = 1;
-    } else if (window.location.href.includes('post/todo')) {
-      index = 4;
+    for (let i = list.length - 1; i >= 0; i--) {
+      if (window.location.href.includes(list[i].path)) {
+        index = i;
+        break
+      }
     }
+
+    // if (window.location.href.includes('post/author')) {
+    //   index = 3;
+    // } else if (window.location.href.includes('post/link')) {
+    //   index = 2;
+    // } else if (window.location.href.includes('article')) {
+    //   index = 1;
+    // } else if (window.location.href.includes('post/todo')) {
+    //   index = 4;
+    // }  else if (window.location.href.includes('post/project')) {
+    //   index = 5;
+    // }
     setIndex(index);
   }, [location]);
 
