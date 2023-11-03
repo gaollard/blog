@@ -1,2 +1,0 @@
-- AI 生成图片
-- 更换背景 https://www.remove.bg/zh/t/change-background
